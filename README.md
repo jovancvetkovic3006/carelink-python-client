@@ -102,6 +102,7 @@ Use the `-h` option for more info. Basic usage:
 python carelink_client2_cli.py --data
 ```
 
+python carelink_client2_push.py
 
 #### Using the library
 
