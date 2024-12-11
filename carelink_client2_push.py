@@ -9,8 +9,8 @@ import json
 client = carelink_client2.CareLinkClient(tokenFile="logindata.json")
 if client.init():
     client.printUserInfo()
-    carelinkDictObject = client.getRecentData()
-
+    carelinkDictObject1 = client.getRecentData()
+    carelinkDictObject = carelinkDictObject1['patientData']
 
     unitsLeft = carelinkDictObject['reservoirRemainingUnits']
     isSensorConected=carelinkDictObject['sensorState']!='NO_DATA_FROM_PUMP'
@@ -28,8 +28,7 @@ if client.init():
         senzorDuration=f"{sensorDurationDays}d {sensorDurationHoursOnly}h"
 
     nextCalibration = carelinkDictObject['timeToNextCalibHours']
-    suspended = 'DA' if carelinkDictObject['lastAlarm'][
-        'messageId'] == 'BC_SID_LOW_SG_INSULIN_DELIVERY_SUSPENDED_SINCE_X_CHECK_BG' else 'NE'
+    suspended = 'DA' if carelinkDictObject['lastAlarm']['type'] == 'BC_SID_LOW_SG_INSULIN_DELIVERY_SUSPENDED_SINCE_X_CHECK_BG' else 'NE'
     trend = 'Pada' if carelinkDictObject['lastSGTrend'] == 'DOWN' else 'Raste' if carelinkDictObject['lastSGTrend'] == 'DOWN' else 'Mirno'
 
     averageSG=round(carelinkDictObject['averageSG'] / 18, 1)
@@ -57,8 +56,7 @@ if client.init():
                     break
 
 
-    if carelinkDictObject['lastAlarm'][
-        'messageId'] == 'BC_SID_LOW_SG_INSULIN_DELIVERY_SUSPENDED_SINCE_X_CHECK_BG':
+    if carelinkDictObject['lastAlarm']['type'] == 'BC_SID_LOW_SG_INSULIN_DELIVERY_SUSPENDED_SINCE_X_CHECK_BG':
         messages.append(f"Pumpica je suspendovana")
 
 
