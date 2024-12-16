@@ -9,78 +9,66 @@ import json
 client = carelink_client2.CareLinkClient(tokenFile="logindata.json")
 if client.init():
     client.printUserInfo()
-    carelinkDictObject1 = client.getRecentData()
-    carelinkDictObject = carelinkDictObject1['patientData']
+    recentData = client.getRecentData()
+    patientData = recentData['patientData']
 
-    unitsLeft = carelinkDictObject['reservoirRemainingUnits']
-    isSensorConected=carelinkDictObject['sensorState']!='NO_DATA_FROM_PUMP'
-    glicemia = round(carelinkDictObject['lastSG']['sg'] / 18, 1)
-    activeInsulin = carelinkDictObject['activeInsulin']['amount']
-    battery = carelinkDictObject['gstBatteryLevel']
-    deviceIsInRange = carelinkDictObject['conduitMedicalDeviceInRange']
-    sensorDurationHours = carelinkDictObject['sensorDurationHours']
-    sensorDurationDays=sensorDurationHours//24
-    sensorDurationHoursOnly=sensorDurationHours%24
-
-    if sensorDurationDays <= 1: 
-        senzorDuration=f"{sensorDurationHours}h"
-    else:
-        senzorDuration=f"{sensorDurationDays}d {sensorDurationHoursOnly}h"
-
-    nextCalibration = carelinkDictObject['timeToNextCalibHours']
-    suspended = 'DA' if carelinkDictObject['lastAlarm']['type'] == 'BC_SID_LOW_SG_INSULIN_DELIVERY_SUSPENDED_SINCE_X_CHECK_BG' else 'NE'
-    trend = 'Pada' if carelinkDictObject['lastSGTrend'] == 'DOWN' else 'Raste' if carelinkDictObject['lastSGTrend'] == 'DOWN' else 'Mirno'
-
-    averageSG=round(carelinkDictObject['averageSG'] / 18, 1)
+    unitsLeft = patientData['reservoirRemainingUnits'] if ('reservoirRemainingUnits' in patientData) else 0
+    isSensorConected=patientData['sensorState']!='NO_DATA_FROM_PUMP'
+    glicemia = round(patientData['lastSG']['sg'] / 18, 1)
+    activeInsulin = round(patientData['activeInsulin']['amount'], 1)
+    battery = patientData['gstBatteryLevel']
+    deviceIsInRange = patientData['conduitMedicalDeviceInRange']
+    trend = 'pada' if patientData['lastSGTrend'] == 'DOWN' else 'raste' if patientData['lastSGTrend'] == 'UP' else 'miran'
+    averageSG=round(patientData['averageSG'] / 18, 1)
     timeInRange='-'
-    belowHypoLimit=str(carelinkDictObject['belowHypoLimit'])+'%'
-    aboveHyperLimit=str(carelinkDictObject['aboveHyperLimit'])+'%'
+    belowHypoLimit=str(patientData['belowHypoLimit'])+'%'
+    aboveHyperLimit=str(patientData['aboveHyperLimit'])+'%'
 
-    if carelinkDictObject['timeInRange']:
-        timeInRange=str(carelinkDictObject['timeInRange'])+'%'
-
+    if patientData['timeInRange']:
+        timeInRange=str(patientData['timeInRange'])+'%'
 
 
     messages = []
 
     if deviceIsInRange & isSensorConected & bool(glicemia):
         messages.append(f"Glikemija {str(glicemia)}\n")
-        messages.append(f"Serzor traje jos {str(senzorDuration)}")
-        messages.append(f"Sledeca kalibracija za {str(nextCalibration)}h")
+        messages.append(f"Trend {str(trend)}\n")
+        messages.append(f"Serzor traje jos {str(patientData['sensorDurationMinutes']//1440)}d {str((patientData['sensorDurationMinutes']%1440)//60)}h {str((patientData['sensorDurationMinutes']%1440)%60)}m")
+        messages.append(f"Sledeca kalibracija za {str(patientData['timeToNextCalibrationMinutes']//60)}h {str(patientData['timeToNextCalibrationMinutes']%60)}m")
+        
+        if 'pumpBannerState' in patientData:
+                if len(patientData['pumpBannerState']) > 0 and patientData['pumpBannerState'][0]['type'] == 'TEMP_BASAL':
+                    temporalni=patientData['pumpBannerState'][0]['timeRemaining']
+                    messages.append(f"Temporalni tece jos {str(temporalni)} min\n")
+
+        if activeInsulin != -1.0:
+            messages.append(f"Aktivni insulin {str(activeInsulin)}")
+            messages.append(f"Preostalo jedinica {str(unitsLeft)}")
+            messages.append(f"Baterija {str(battery)}%\n")
+
     else:
            messages.append(f"Senzor nije povezan\n")
-           for sg in carelinkDictObject['sgs']:
+           for sg in patientData['sgs']:
                 if sg:
                     glicemia = round(sg['sg'] / 18, 1)
                     messages.append(f"Poslednja glikemija {str(glicemia)}\n")
                     break
-
-
-    if carelinkDictObject['lastAlarm']['type'] == 'BC_SID_LOW_SG_INSULIN_DELIVERY_SUSPENDED_SINCE_X_CHECK_BG':
+            
+    if patientData['pumpSuspended']:
         messages.append(f"Pumpica je suspendovana")
-
-
-    if len(carelinkDictObject['pumpBannerState']) > 0 and carelinkDictObject['pumpBannerState'][0]['type'] == 'TEMP_BASAL':
-        temporalni=carelinkDictObject['pumpBannerState'][0]['timeRemaining']
-        messages.append(f"Temporalni tece jos {str(temporalni)} min\n")
-
-    if activeInsulin != -1.0:
-        messages.append(f"Aktivni insulin {str(activeInsulin)}")
-        messages.append(f"Preostalo jedinica {str(unitsLeft)}")
-        messages.append(f"Baterija {str(battery)}%\n")
-
 
     messages.append(f"HbA1c {str(averageSG)}")
 
-    if carelinkDictObject['timeInRange']:
+    if patientData['timeInRange']:
         messages.append(f"U normali je {str(timeInRange)}")
         messages.append(f"Niska {str(belowHypoLimit)}")
         messages.append(f"Visoka {str(aboveHyperLimit)}")
 
+
 with open('carelink_latestdata.json', 'r') as openfile:
     previousData = json.load(openfile)
 
-json_object = json.dumps(carelinkDictObject, indent=4)
+json_object = json.dumps(patientData, indent=4)
 with open("carelink_latestdata.json", "w") as outfile:
     outfile.write(json_object)
 
