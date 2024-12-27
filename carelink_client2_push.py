@@ -13,11 +13,11 @@ if client.init():
     patientData = recentData['patientData']
 
     unitsLeft = patientData['reservoirRemainingUnits'] if ('reservoirRemainingUnits' in patientData) else 0
-    isSensorConected=patientData['sensorState']!='NO_DATA_FROM_PUMP'
     glicemia = round(patientData['lastSG']['sg'] / 18, 1)
+    isSensorConected=patientData['conduitSensorInRange']
     activeInsulin = round(patientData['activeInsulin']['amount'], 1)
     battery = patientData['gstBatteryLevel']
-    deviceIsInRange = patientData['conduitMedicalDeviceInRange']
+    deviceIsInRange = patientData['conduitSensorInRange']
     trend = 'pada' if patientData['lastSGTrend'] == 'DOWN' else 'raste' if patientData['lastSGTrend'] == 'UP' else 'miran'
     averageSG=round(patientData['averageSG'] / 18, 1)
     timeInRange='-'
@@ -43,8 +43,6 @@ if client.init():
 
         if activeInsulin != -1.0:
             messages.append(f"Aktivni insulin {str(activeInsulin)}")
-            messages.append(f"Preostalo jedinica {str(unitsLeft)}")
-            messages.append(f"Baterija {str(battery)}%\n")
 
     else:
            messages.append(f"Senzor nije povezan\n")
@@ -63,6 +61,10 @@ if client.init():
         messages.append(f"U normali je {str(timeInRange)}")
         messages.append(f"Niska {str(belowHypoLimit)}")
         messages.append(f"Visoka {str(aboveHyperLimit)}")
+
+    
+    messages.append(f"Preostalo jedinica {str(unitsLeft)}")
+    messages.append(f"Baterija {str(battery)}%\n")
 
 
 with open('carelink_latestdata.json', 'r') as openfile:
