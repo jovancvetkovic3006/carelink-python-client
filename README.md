@@ -89,6 +89,7 @@ The script opens a Firefox web browser with the Carelink login page. You have to
 python3 carelink_carepartner_api_login.py 
 ```
 
+source myenv/bin/activate
 
 The Carelink Client reads this file from the local folder and it will take care of refreshing automatically the login data when it expires. It should be able to do so within one week of the last refresh.
 
@@ -99,7 +100,7 @@ The Carelink Client reads this file from the local folder and it will take care 
 `carelink_client2_cli.py` is an example Python application which uses the `carelink_client2` library to download the patients Carelink data to a file via the command line. 
 Use the `-h` option for more info. Basic usage:
 ```
-python carelink_client2_cli.py --data
+python3 carelink_client2_cli.py --data
 ```
 
 python carelink_client2_push.py

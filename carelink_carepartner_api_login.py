@@ -50,6 +50,8 @@ import requests
 import curlify
 import OpenSSL
 from seleniumwire import webdriver
+from selenium.webdriver.firefox.options import Options
+
 
 
 def setup_logging():
@@ -105,7 +107,10 @@ def reformat_csr(csr):
 def do_captcha(url, redirect_url):
 	print("opening Firefox instance...")
 	print("Warning: you may need to close Firefox if it's already running or nothing happens!")
-	driver = webdriver.Firefox()
+	options = Options()
+	options.add_argument("-profile")
+	options.add_argument("/home/jovan-cvetkovic/Firefox/medtronic") 
+	driver = webdriver.Firefox(options=options)
 	driver.get(url)
 
 	while True:
