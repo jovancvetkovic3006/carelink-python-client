@@ -4,12 +4,12 @@
     "firstName": "Jefimija",
     "appModelType": "BLE_20_COMM",
     "appModelNumber": "NA",
-    "currentServerTime": 1744363300734,
+    "currentServerTime": 1744370659323,
     "conduitSerialNumber": "BCCAD014-CF75-40DA-B83C-EF3C3E1B0802",
-    "conduitBatteryLevel": 100,
+    "conduitBatteryLevel": 94,
     "conduitBatteryStatus": "FULL",
-    "lastConduitDateTime": "2025-04-11T11:20:26",
-    "lastConduitUpdateServerDateTime": 1744363227782,
+    "lastConduitDateTime": "2025-04-11T13:23:24",
+    "lastConduitUpdateServerDateTime": 1744370605872,
     "medicalDeviceFamily": "NGP",
     "medicalDeviceInformation": {
         "manufacturer": "Medtronic",
@@ -20,8 +20,8 @@
         "pnpId": "01.0.0",
         "deviceSerialNumber": "NG3277085H"
     },
-    "medicalDeviceTime": 1744366800632,
-    "lastMedicalDeviceDataUpdateServerTime": 1744363227782,
+    "medicalDeviceTime": 1744374179552,
+    "lastMedicalDeviceDataUpdateServerTime": 1744370605872,
     "cgmInfo": {
         "sensorType": "DURABLE"
     },
@@ -45,11 +45,11 @@
         "waitToCalibrateDuration": 0,
         "safeBasalDuration": 0
     },
-    "reservoirLevelPercent": 16,
+    "reservoirLevelPercent": 15,
     "reservoirAmount": 300,
     "pumpSuspended": false,
     "pumpBatteryLevelPercent": 100,
-    "reservoirRemainingUnits": 48.5,
+    "reservoirRemainingUnits": 47.2,
     "conduitInRange": true,
     "conduitMedicalDeviceInRange": true,
     "conduitSensorInRange": true,
@@ -74,8 +74,8 @@
         }
     },
     "activeInsulin": {
-        "amount": 2.0999999046325684,
-        "datetime": "2025-04-11T10:20:00",
+        "amount": 0.30000001192092896,
+        "datetime": "2025-04-11T12:22:59",
         "kind": "INSULIN",
         "version": 1,
         "precision": "TENTHS"
@@ -90,35 +90,35 @@
         "version": 1,
         "sg": 0,
         "sensorState": "CHANGE_SENSOR",
-        "timestamp": "2025-04-11T10:18:00"
+        "timestamp": "2025-04-11T12:18:00"
     },
     "lastSGTrend": "NONE",
     "limits": [
         {
-            "timestamp": "2025-04-10T10:20:00",
+            "timestamp": "2025-04-10T12:22:59",
             "highLimit": 126,
             "lowLimit": 90,
             "kind": "LIMITS",
             "version": 1
         },
         {
-            "timestamp": "2025-04-11T00:00:00",
+            "timestamp": "2025-04-11T00:02:59",
             "highLimit": 126,
             "lowLimit": 90,
             "kind": "LIMITS",
             "version": 1
         }
     ],
-    "belowHypoLimit": 3,
-    "aboveHyperLimit": 31,
-    "timeInRange": 66,
-    "averageSGFloat": 158.09375,
-    "averageSG": 158,
+    "belowHypoLimit": 4,
+    "aboveHyperLimit": 21,
+    "timeInRange": 75,
+    "averageSGFloat": 146.2,
+    "averageSG": 146,
     "markers": [
         {
             "type": "AUTO_MODE_STATUS",
-            "timestamp": "2025-04-10T10:20:00",
-            "displayTime": "2025-04-10T10:20:01",
+            "timestamp": "2025-04-10T12:22:59",
+            "displayTime": "2025-04-10T12:23:00",
             "data": {
                 "dataValues": {},
                 "resourceValues": {}
@@ -166,8 +166,8 @@
         },
         {
             "type": "LOW_GLUCOSE_SUSPENDED",
-            "timestamp": "2025-04-10T10:20:00",
-            "displayTime": "2025-04-10T10:20:01",
+            "timestamp": "2025-04-10T12:22:59",
+            "displayTime": "2025-04-10T12:23:00",
             "data": {
                 "dataValues": {},
                 "resourceValues": {}
@@ -788,92 +788,6 @@
         },
         {
             "type": "INSULIN",
-            "timestamp": "2025-04-10T11:54:55",
-            "displayTime": "2025-04-10T11:54:56",
-            "data": {
-                "dataValues": {
-                    "insulinType": "UNKNOWN",
-                    "programmedFastAmount": "4.8",
-                    "deliveredFastAmount": "4.8",
-                    "activationType": "UNDETERMINED",
-                    "completed": true,
-                    "bolusType": "FAST"
-                },
-                "resourceValues": {
-                    "LS_Bolus": [],
-                    "LS_Insulin_Units": [
-                        "4.8"
-                    ],
-                    "LS_RegularBolusCompletedDeliveryTitle": [
-                        "4.8"
-                    ],
-                    "LS_RegularBolusCompletedDeliveryDesc": [
-                        "4.8"
-                    ]
-                }
-            },
-            "views": [
-                {
-                    "viewType": "GRAPH",
-                    "items": [
-                        {
-                            "action": "DISPLAY",
-                            "contents": [],
-                            "iconIdentifier": "icon_event_medicine.png",
-                            "position": 999
-                        },
-                        {
-                            "action": "ONCLICK",
-                            "contents": [
-                                {
-                                    "type": "TITLE",
-                                    "resourceKey": "$LS_Bolus"
-                                },
-                                {
-                                    "type": "DESCRIPTION",
-                                    "resourceKey": "$LS_Insulin_Units"
-                                }
-                            ],
-                            "iconIdentifier": "icon_event_medicine@2x.png",
-                            "position": -1
-                        }
-                    ]
-                },
-                {
-                    "viewType": "HISTORY",
-                    "items": [
-                        {
-                            "action": "DISPLAY",
-                            "contents": [
-                                {
-                                    "type": "TITLE",
-                                    "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
-                                }
-                            ],
-                            "iconIdentifier": "bolus_icon.png",
-                            "position": -1
-                        },
-                        {
-                            "action": "ONCLICK",
-                            "contents": [
-                                {
-                                    "type": "TITLE",
-                                    "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
-                                },
-                                {
-                                    "type": "DESCRIPTION",
-                                    "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
-                                }
-                            ],
-                            "iconIdentifier": "bolus_icon.png",
-                            "position": -1
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "INSULIN",
             "timestamp": "2025-04-10T18:21:25",
             "displayTime": "2025-04-10T18:21:26",
             "data": {
@@ -1132,174 +1046,6 @@
         }
     ],
     "sgs": [
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 268,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T10:23:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 273,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T10:28:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 269,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T10:33:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 261,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T10:38:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 255,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T10:43:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 246,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T10:48:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 240,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T10:53:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 242,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T10:58:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 255,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:03:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 257,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:08:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 244,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:13:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 234,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:18:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 224,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:23:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 214,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:28:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 197,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:33:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 187,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:38:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 184,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:43:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 185,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:48:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 182,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:53:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 177,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T11:58:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 182,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T12:03:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 182,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T12:08:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 174,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T12:13:00"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 162,
-            "sensorState": "NO_ERROR_MESSAGE",
-            "timestamp": "2025-04-10T12:18:00"
-        },
         {
             "kind": "SG",
             "version": 1,
@@ -3147,23 +2893,179 @@
             "sg": 0,
             "sensorState": "CHANGE_SENSOR",
             "timestamp": "2025-04-11T10:18:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:23:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:28:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:33:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:38:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:43:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:48:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:53:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:58:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:03:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:08:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:13:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:18:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:23:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:28:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:33:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:38:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:43:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:48:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:53:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T11:58:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T12:03:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T12:08:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T12:13:00"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T12:18:00"
         }
     ],
     "notificationHistory": {
         "activeNotifications": [],
         "clearedNotifications": [
-            {
-                "faultId": "816",
-                "version": "1",
-                "referenceGUID": "C0290000-3003-0000-B6B9-A72D00000000",
-                "dateTime": "2025-04-10T10:33:09",
-                "type": "ALERT",
-                "triggeredDateTime": "2025-04-10T10:32:53",
-                "additionalInfo": {
-                    "sg": 269,
-                    "pumpDeliverySuspendState": false
-                }
-            },
             {
                 "faultId": "811",
                 "version": "1",
