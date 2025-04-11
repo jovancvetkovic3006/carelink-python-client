@@ -2,4 +2,4 @@
 cd "$(dirname "$0")";
 CWD="$(pwd)"
 echo $CWD
-python3 carelink_client2_push.py
+/home/jovan-cvetkovic/Workspace/projects/carelink-python-client/myenv/bin/python3 carelink_client2_push.py

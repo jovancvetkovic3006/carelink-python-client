@@ -10,7 +10,6 @@ client = carelink_client2.CareLinkClient(tokenFile="logindata.json")
 if client.init():
     client.printUserInfo()
     recentData = client.getRecentData()
-    print(recentData)
     patientData = recentData['patientData']
 
     unitsLeft = patientData['reservoirRemainingUnits'] if ('reservoirRemainingUnits' in patientData) else 0

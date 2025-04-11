@@ -1,0 +1,3502 @@
+{
+   "metadata": {
+      "kind": "BLENGP",
+      "version": 4,
+      "typeCast": false,
+      "iconResourceBundle": {
+         "iconBundleTimestamp": "2023-09-28T15:13:12",
+         "iconBundleUrl": "https://clcloud.minimed.eu/connect/carepartner/v11/resourcebundle/icon/common/1.0/carepartner_icon_resource_bundle.zip"
+      },
+      "clientDateTime": "2025-04-11T10:20:00.632+02:00"
+   },
+   "patientData": {
+      "clientTimeZoneName": "Central European Summer Time",
+      "lastName": "Cvetkovic",
+      "firstName": "Jefimija",
+      "appModelType": "BLE_20_COMM",
+      "appModelNumber": "NA",
+      "currentServerTime": 1744363244203,
+      "conduitSerialNumber": "BCCAD014-CF75-40DA-B83C-EF3C3E1B0802",
+      "conduitBatteryLevel": 100,
+      "conduitBatteryStatus": "FULL",
+      "lastConduitDateTime": "2025-04-11T11:20:26",
+      "lastConduitUpdateServerDateTime": 1744363227782,
+      "medicalDeviceFamily": "NGP",
+      "medicalDeviceInformation": {
+         "manufacturer": "Medtronic",
+         "modelNumber": "MMT-1811",
+         "hardwareRevision": "A1.01",
+         "firmwareRevision": "6.28.3",
+         "systemId": "40003277085 9207",
+         "pnpId": "01.0.0",
+         "deviceSerialNumber": "NG3277085H"
+      },
+      "medicalDeviceTime": 1744366800632,
+      "lastMedicalDeviceDataUpdateServerTime": 1744363227782,
+      "cgmInfo": {
+         "sensorType": "DURABLE"
+      },
+      "calFreeSensor": false,
+      "calibStatus": "UNKNOWN",
+      "timeToNextEarlyCalibrationMinutes": -1,
+      "timeToNextCalibrationMinutes": -1,
+      "timeToNextCalibrationRecommendedMinutes": -1,
+      "timeToNextCalibHours": 255,
+      "finalCalibration": false,
+      "sensorDurationMinutes": -1,
+      "sensorDurationHours": 255,
+      "transmitterPairedTime": "NA",
+      "systemStatusTimeRemaining": -1,
+      "gstBatteryLevel": 39,
+      "pumpBannerState": [],
+      "therapyAlgorithmState": {
+         "autoModeShieldState": "FEATURE_OFF",
+         "autoModeReadinessState": "NO_ACTION_REQUIRED",
+         "plgmLgsState": "REFRACTORY_PERIOD",
+         "waitToCalibrateDuration": 0,
+         "safeBasalDuration": 0
+      },
+      "reservoirLevelPercent": 16,
+      "reservoirAmount": 300,
+      "pumpSuspended": false,
+      "pumpBatteryLevelPercent": 100,
+      "reservoirRemainingUnits": 48.5,
+      "conduitInRange": true,
+      "conduitMedicalDeviceInRange": true,
+      "conduitSensorInRange": true,
+      "systemStatusMessage": "CHANGE_SENSOR",
+      "sensorState": "CHANGE_SENSOR",
+      "gstCommunicationState": true,
+      "pumpCommunicationState": true,
+      "timeFormat": "HR_24",
+      "bgUnits": "MMOL_L",
+      "maxAutoBasalRate": 2.0,
+      "maxBolusAmount": 10.0,
+      "sgBelowLimit": 40,
+      "approvedForTreatment": false,
+      "lastAlarm": {
+         "faultId": "107",
+         "version": "1",
+         "GUID": "DC290000-6B00-0000-60E7-A82D00000000",
+         "dateTime": "2025-04-11T08:00:24",
+         "type": "REMINDER",
+         "additionalInfo": {
+            "pumpDeliverySuspendState": false
+         }
+      },
+      "activeInsulin": {
+         "amount": 2.0999999046325684,
+         "datetime": "2025-04-11T10:20:00",
+         "kind": "INSULIN",
+         "version": 1,
+         "precision": "TENTHS"
+      },
+      "basal": {
+         "basalRate": 0.65,
+         "activeBasalPattern": "BASAL2"
+      },
+      "lastSensorTime": 0,
+      "lastSG": {
+         "kind": "SG",
+         "version": 1,
+         "sg": 0,
+         "sensorState": "CHANGE_SENSOR",
+         "timestamp": "2025-04-11T10:18:00"
+      },
+      "lastSGTrend": "NONE",
+      "limits": [
+         {
+            "timestamp": "2025-04-10T10:20:00",
+            "highLimit": 126,
+            "lowLimit": 90,
+            "kind": "LIMITS",
+            "version": 1
+         },
+         {
+            "timestamp": "2025-04-11T00:00:00",
+            "highLimit": 126,
+            "lowLimit": 90,
+            "kind": "LIMITS",
+            "version": 1
+         }
+      ],
+      "belowHypoLimit": 3,
+      "aboveHyperLimit": 31,
+      "timeInRange": 66,
+      "averageSGFloat": 158.09375,
+      "averageSG": 158,
+      "markers": [
+         {
+            "type": "AUTO_MODE_STATUS",
+            "timestamp": "2025-04-10T10:20:00",
+            "displayTime": "2025-04-10T10:20:01",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T10:20:00",
+            "displayTime": "2025-04-10T10:20:01",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T12:37:53",
+            "displayTime": "2025-04-10T12:37:54",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T12:38:28",
+            "displayTime": "2025-04-10T12:38:29",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T13:12:52",
+            "displayTime": "2025-04-10T13:12:53",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T13:17:10",
+            "displayTime": "2025-04-10T13:17:11",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T13:52:52",
+            "displayTime": "2025-04-10T13:52:53",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T13:53:14",
+            "displayTime": "2025-04-10T13:53:15",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T16:37:53",
+            "displayTime": "2025-04-10T16:37:54",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T16:38:15",
+            "displayTime": "2025-04-10T16:38:16",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T19:07:54",
+            "displayTime": "2025-04-10T19:07:55",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-04-10T20:18:07",
+            "displayTime": "2025-04-10T20:18:08",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "CALIBRATION",
+            "timestamp": "2025-04-10T15:28:59",
+            "displayTime": "2025-04-10T15:29:00",
+            "data": {
+               "dataValues": {
+                  "unitValue": "175",
+                  "bgUnits": "MMOL_L",
+                  "calibrationSuccess": true
+               },
+               "resourceValues": {
+                  "LS_MmolL": [],
+                  "LS_CalibrationAccepted": [
+                     "175"
+                  ],
+                  "LS_SensorCalibrated": [
+                     "175"
+                  ],
+                  "LS_SensorCalibratedWith": [
+                     "175"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_bloodglucose.png",
+                        "position": 180
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_CalibrationAccepted"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_bloodglucose.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_SensorCalibrated $LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "ongraph_status_bg@3x.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_SensorCalibrated $LS_MmolL"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_SensorCalibratedWith $LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "ongraph_status_bg@3x.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "INSULIN",
+            "timestamp": "2025-04-10T11:54:55",
+            "displayTime": "2025-04-10T11:54:56",
+            "data": {
+               "dataValues": {
+                  "insulinType": "UNKNOWN",
+                  "programmedFastAmount": "4.8",
+                  "deliveredFastAmount": "4.8",
+                  "activationType": "UNDETERMINED",
+                  "completed": true,
+                  "bolusType": "FAST"
+               },
+               "resourceValues": {
+                  "LS_Bolus": [],
+                  "LS_Insulin_Units": [
+                     "4.8"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryTitle": [
+                     "4.8"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryDesc": [
+                     "4.8"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_medicine.png",
+                        "position": 999
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_Bolus"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_Insulin_Units"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_medicine@2x.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "INSULIN",
+            "timestamp": "2025-04-10T18:21:25",
+            "displayTime": "2025-04-10T18:21:26",
+            "data": {
+               "dataValues": {
+                  "insulinType": "UNKNOWN",
+                  "programmedFastAmount": "4.5",
+                  "deliveredFastAmount": "4.5",
+                  "activationType": "UNDETERMINED",
+                  "completed": true,
+                  "bolusType": "FAST"
+               },
+               "resourceValues": {
+                  "LS_Bolus": [],
+                  "LS_Insulin_Units": [
+                     "4.5"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryTitle": [
+                     "4.5"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryDesc": [
+                     "4.5"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_medicine.png",
+                        "position": 999
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_Bolus"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_Insulin_Units"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_medicine@2x.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "INSULIN",
+            "timestamp": "2025-04-11T06:19:47",
+            "displayTime": "2025-04-11T06:19:48",
+            "data": {
+               "dataValues": {
+                  "insulinType": "UNKNOWN",
+                  "programmedFastAmount": "4.8",
+                  "deliveredFastAmount": "4.8",
+                  "activationType": "UNDETERMINED",
+                  "completed": true,
+                  "bolusType": "FAST"
+               },
+               "resourceValues": {
+                  "LS_Bolus": [],
+                  "LS_Insulin_Units": [
+                     "4.8"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryTitle": [
+                     "4.8"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryDesc": [
+                     "4.8"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_medicine.png",
+                        "position": 999
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_Bolus"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_Insulin_Units"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_medicine@2x.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "INSULIN",
+            "timestamp": "2025-04-11T08:20:17",
+            "displayTime": "2025-04-11T08:20:18",
+            "data": {
+               "dataValues": {
+                  "insulinType": "UNKNOWN",
+                  "programmedFastAmount": "1.2",
+                  "deliveredFastAmount": "1.2",
+                  "activationType": "UNDETERMINED",
+                  "completed": true,
+                  "bolusType": "FAST"
+               },
+               "resourceValues": {
+                  "LS_Bolus": [],
+                  "LS_Insulin_Units": [
+                     "1.2"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryTitle": [
+                     "1.2"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryDesc": [
+                     "1.2"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_medicine.png",
+                        "position": 999
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_Bolus"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_Insulin_Units"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_medicine@2x.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         }
+      ],
+      "sgs": [
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 268,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T10:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 273,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T10:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 269,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T10:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 261,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T10:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 255,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T10:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 246,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T10:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 240,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T10:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 242,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T10:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 255,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 257,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 244,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 234,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 224,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 214,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 197,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 187,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 184,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 185,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 182,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 177,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T11:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 182,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 182,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 174,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 162,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 144,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 134,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 127,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 117,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 103,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 91,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 85,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 78,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T12:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 78,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 82,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 82,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 80,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 75,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 76,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 76,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 77,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 82,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 95,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 104,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 112,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T13:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 119,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 124,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 129,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 132,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 136,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 141,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 141,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 143,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 149,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 158,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 167,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 163,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T14:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 163,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 169,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 179,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 177,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 178,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 175,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 177,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 178,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 176,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 176,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 176,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 177,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T15:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 174,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 166,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 159,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 150,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 139,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 136,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 131,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 125,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 121,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 115,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 109,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 105,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T16:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 106,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 110,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 117,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 124,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 135,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 146,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 145,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 145,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 139,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 133,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 131,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 132,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T17:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 132,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 134,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 138,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 136,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 134,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 132,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 128,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 129,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 131,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 132,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 132,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 128,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T18:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 121,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 112,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 101,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 90,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 81,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 75,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 69,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 61,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 67,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 67,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 69,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 72,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T19:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 74,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 84,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 106,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 120,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 130,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 143,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 153,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 162,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 167,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 159,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 151,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 148,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T20:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 151,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 159,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 173,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 181,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 183,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 185,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 188,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 196,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 202,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 205,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 205,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 207,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T21:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 210,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 213,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 217,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 220,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 220,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 223,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 227,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 231,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 235,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 239,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 240,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 242,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T22:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 244,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T23:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 246,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T23:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 247,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T23:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 248,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T23:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 247,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T23:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 246,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T23:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 245,
+            "sensorState": "NO_ERROR_MESSAGE",
+            "timestamp": "2025-04-10T23:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-10T23:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-10T23:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-10T23:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-10T23:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-10T23:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T00:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T01:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T02:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T03:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T04:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T05:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T06:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T07:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T08:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:18:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:23:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:28:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:33:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:38:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:43:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:48:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:53:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T09:58:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:03:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:08:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:13:00"
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0,
+            "sensorState": "CHANGE_SENSOR",
+            "timestamp": "2025-04-11T10:18:00"
+         }
+      ],
+      "notificationHistory": {
+         "activeNotifications": [],
+         "clearedNotifications": [
+            {
+               "faultId": "816",
+               "version": "1",
+               "referenceGUID": "C0290000-3003-0000-B6B9-A72D00000000",
+               "dateTime": "2025-04-10T10:33:09",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T10:32:53",
+               "additionalInfo": {
+                  "sg": 269,
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "811",
+               "version": "1",
+               "referenceGUID": "C1290000-2B03-0000-03D7-A72D00000000",
+               "dateTime": "2025-04-10T12:38:24",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T12:37:54",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "805",
+               "version": "1",
+               "referenceGUID": "C2290000-2503-0000-2ED8-A72D00000000",
+               "dateTime": "2025-04-10T12:43:17",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T12:42:54",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "802",
+               "version": "1",
+               "referenceGUID": "C3290000-2203-0000-5CD9-A72D00000000",
+               "dateTime": "2025-04-10T12:48:02",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T12:47:56",
+               "additionalInfo": {
+                  "sg": 91,
+                  "pumpDeliverySuspendState": false,
+                  "pnpId": "1.0"
+               }
+            },
+            {
+               "faultId": "809",
+               "version": "1",
+               "referenceGUID": "C4290000-2903-0000-36DF-A72D00000000",
+               "dateTime": "2025-04-10T13:17:06",
+               "type": "ALARM",
+               "triggeredDateTime": "2025-04-10T13:12:53",
+               "additionalInfo": {
+                  "sg": 82,
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "802",
+               "version": "1",
+               "referenceGUID": "C5290000-2203-0000-10E5-A72D00000000",
+               "dateTime": "2025-04-10T13:38:03",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T13:37:52",
+               "additionalInfo": {
+                  "sg": 77,
+                  "pumpDeliverySuspendState": false,
+                  "pnpId": "1.0"
+               }
+            },
+            {
+               "faultId": "811",
+               "version": "1",
+               "referenceGUID": "C6290000-2B03-0000-96E8-A72D00000000",
+               "dateTime": "2025-04-10T13:53:06",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T13:52:53",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "784",
+               "version": "1",
+               "referenceGUID": "C7290000-1003-0000-A3E8-A72D00000000",
+               "dateTime": "2025-04-10T13:53:08",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T13:52:53",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "104",
+               "version": "1",
+               "referenceGUID": "C8290000-6800-0000-D9E8-A72D00000000",
+               "dateTime": "2025-04-10T13:54:10",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T13:54:00",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "817",
+               "version": "1",
+               "referenceGUID": "C9290000-3103-0000-C2E9-A72D00000000",
+               "dateTime": "2025-04-10T13:58:06",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T13:57:53",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "107",
+               "version": "1",
+               "referenceGUID": "CA290000-6B00-0000-41EA-A72D00000000",
+               "dateTime": "2025-04-10T14:00:07",
+               "type": "REMINDER",
+               "triggeredDateTime": "2025-04-10T14:00:00",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "816",
+               "version": "1",
+               "referenceGUID": "CB290000-3003-0000-47ED-A72D00000000",
+               "dateTime": "2025-04-10T14:14:36",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T14:12:54",
+               "additionalInfo": {
+                  "sg": 129,
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "869",
+               "version": "1",
+               "referenceGUID": "CC290000-6503-0000-DBFE-A72D00000000",
+               "dateTime": "2025-04-10T15:28:07",
+               "type": "REMINDER",
+               "triggeredDateTime": "2025-04-10T15:27:55",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false,
+                  "pnpId": "1.0"
+               }
+            },
+            {
+               "faultId": "811",
+               "version": "1",
+               "referenceGUID": "CD290000-2B03-0000-430F-A82D00000000",
+               "dateTime": "2025-04-10T16:38:10",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T16:37:54",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "805",
+               "version": "1",
+               "referenceGUID": "CE290000-2503-0000-C712-A82D00000000",
+               "dateTime": "2025-04-10T17:03:25",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T16:52:55",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "816",
+               "version": "1",
+               "referenceGUID": "CF290000-3003-0000-D019-A82D00000000",
+               "dateTime": "2025-04-10T17:23:10",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T17:22:55",
+               "additionalInfo": {
+                  "sg": 135,
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "784",
+               "version": "1",
+               "referenceGUID": "D0290000-1003-0000-FC1A-A82D00000000",
+               "dateTime": "2025-04-10T17:28:07",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T17:27:55",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "811",
+               "version": "1",
+               "referenceGUID": "D1290000-2B03-0000-6C32-A82D00000000",
+               "dateTime": "2025-04-10T19:08:18",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T19:07:55",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "803",
+               "version": "1",
+               "referenceGUID": "D2290000-2303-0000-C234-A82D00000000",
+               "dateTime": "2025-04-10T19:18:10",
+               "type": "ALARM",
+               "triggeredDateTime": "2025-04-10T19:17:54",
+               "additionalInfo": {
+                  "sg": 90,
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "803",
+               "version": "1",
+               "referenceGUID": "D3290000-2303-0000-9E3A-A82D00000000",
+               "dateTime": "2025-04-10T19:47:11",
+               "type": "ALARM",
+               "triggeredDateTime": "2025-04-10T19:42:54",
+               "additionalInfo": {
+                  "sg": 67,
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "803",
+               "version": "1",
+               "referenceGUID": "D4290000-2303-0000-7B40-A82D00000000",
+               "dateTime": "2025-04-10T20:08:06",
+               "type": "ALARM",
+               "triggeredDateTime": "2025-04-10T20:07:55",
+               "additionalInfo": {
+                  "sg": 84,
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "817",
+               "version": "1",
+               "referenceGUID": "D5290000-3103-0000-D342-A82D00000000",
+               "dateTime": "2025-04-10T20:18:02",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T20:17:54",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "816",
+               "version": "1",
+               "referenceGUID": "D6290000-3003-0000-2B45-A82D00000000",
+               "dateTime": "2025-04-10T20:28:05",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T20:27:54",
+               "additionalInfo": {
+                  "sg": 143,
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "784",
+               "version": "1",
+               "referenceGUID": "D7290000-1003-0000-5746-A82D00000000",
+               "dateTime": "2025-04-10T20:33:03",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T20:32:54",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "816",
+               "version": "1",
+               "referenceGUID": "D9290000-3003-0000-8870-A82D00000000",
+               "dateTime": "2025-04-10T23:42:56",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T23:32:55",
+               "additionalInfo": {
+                  "sg": 245,
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "794",
+               "version": "1",
+               "referenceGUID": "DA290000-1A03-0000-E272-A82D00000000",
+               "dateTime": "2025-04-10T23:43:01",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T23:37:55",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "73",
+               "version": "1",
+               "referenceGUID": "D8290000-4900-0000-E672-A82D00000000",
+               "dateTime": "2025-04-10T23:43:05",
+               "type": "ALERT",
+               "triggeredDateTime": "2025-04-10T23:25:00",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "84",
+               "version": "1",
+               "referenceGUID": "DB290000-5400-0000-1E73-A82D00000000",
+               "dateTime": "2025-04-10T23:44:05",
+               "type": "ALARM",
+               "triggeredDateTime": "2025-04-10T23:43:57",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            },
+            {
+               "faultId": "107",
+               "version": "1",
+               "referenceGUID": "DC290000-6B00-0000-60E7-A82D00000000",
+               "dateTime": "2025-04-11T08:00:24",
+               "type": "REMINDER",
+               "triggeredDateTime": "2025-04-11T08:00:00",
+               "additionalInfo": {
+                  "pumpDeliverySuspendState": false
+               }
+            }
+         ]
+      }
+   }
+}

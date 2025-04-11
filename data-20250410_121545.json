@@ -1,0 +1,2696 @@
+{
+   "metadata": {
+      "kind": "BLENGP",
+      "version": 4,
+      "typeCast": false,
+      "iconResourceBundle": {
+         "iconBundleTimestamp": "2023-09-28T15:13:12",
+         "iconBundleUrl": "https://clcloud.minimed.eu/connect/carepartner/v11/resourcebundle/icon/common/1.0/carepartner_icon_resource_bundle.zip"
+      },
+      "clientDateTime": "2025-02-13T13:48:13.041+01:00"
+   },
+   "patientData": {
+      "clientTimeZoneName": "Central European Standard Time",
+      "lastName": "Cvetkovic",
+      "firstName": "Jefimija",
+      "appModelType": "BLE_20_COMM",
+      "appModelNumber": "NA",
+      "currentServerTime": 1744280145439,
+      "conduitSerialNumber": "BCCAD014-CF75-40DA-B83C-EF3C3E1B0802",
+      "conduitBatteryLevel": 0,
+      "conduitBatteryStatus": "FULL",
+      "lastConduitDateTime": "2025-02-13T13:48:44",
+      "lastConduitUpdateServerDateTime": 1739450956188,
+      "medicalDeviceFamily": "NGP",
+      "medicalDeviceInformation": {
+         "manufacturer": "Medtronic",
+         "modelNumber": "MMT-1811",
+         "hardwareRevision": "A1.01",
+         "firmwareRevision": "6.28.3",
+         "systemId": "40003277085 9207",
+         "pnpId": "01.0.0",
+         "deviceSerialNumber": "NG3277085H"
+      },
+      "medicalDeviceTime": 1744283682292,
+      "lastMedicalDeviceDataUpdateServerTime": 1739450956188,
+      "cgmInfo": {
+         "sensorType": "DURABLE"
+      },
+      "calFreeSensor": false,
+      "calibStatus": "UNKNOWN",
+      "timeToNextEarlyCalibrationMinutes": -1,
+      "timeToNextCalibrationMinutes": 684,
+      "timeToNextCalibrationRecommendedMinutes": 0,
+      "timeToNextCalibHours": 0,
+      "finalCalibration": false,
+      "sensorDurationMinutes": 0,
+      "sensorDurationHours": 0,
+      "transmitterPairedTime": "NA",
+      "systemStatusTimeRemaining": -1,
+      "gstBatteryLevel": 51,
+      "pumpBannerState": null,
+      "therapyAlgorithmState": {
+         "autoModeShieldState": "FEATURE_OFF",
+         "autoModeReadinessState": "NO_ACTION_REQUIRED",
+         "plgmLgsState": "SUSPEND_FIRED_PLGM",
+         "waitToCalibrateDuration": 0,
+         "safeBasalDuration": 0
+      },
+      "reservoirLevelPercent": 0,
+      "reservoirAmount": 0,
+      "pumpSuspended": true,
+      "pumpBatteryLevelPercent": 0,
+      "reservoirRemainingUnits": 0.0,
+      "conduitInRange": false,
+      "conduitMedicalDeviceInRange": false,
+      "conduitSensorInRange": false,
+      "systemStatusMessage": null,
+      "sensorState": "UNKNOWN",
+      "gstCommunicationState": false,
+      "pumpCommunicationState": false,
+      "timeFormat": "HR_24",
+      "bgUnits": "MMOL_L",
+      "maxAutoBasalRate": 2.0,
+      "maxBolusAmount": 10.0,
+      "sgBelowLimit": 40,
+      "approvedForTreatment": false,
+      "lastAlarm": {
+         "faultId": "811",
+         "version": "1",
+         "GUID": "71250000-2B03-0000-061E-5E2D00000000",
+         "dateTime": "2025-02-13T13:33:24",
+         "type": "ALERT",
+         "additionalInfo": {
+            "pumpDeliverySuspendState": false
+         }
+      },
+      "activeInsulin": {
+         "amount": -1.0,
+         "kind": "Insulin",
+         "version": 1
+      },
+      "basal": null,
+      "lastSensorTime": 0,
+      "lastSG": {
+         "kind": "SG",
+         "version": 1,
+         "sg": 0
+      },
+      "lastSGTrend": "NONE",
+      "limits": [
+         {
+            "timestamp": "2025-02-12T13:48:13",
+            "highLimit": 144,
+            "lowLimit": 90,
+            "kind": "LIMITS",
+            "version": 1
+         },
+         {
+            "timestamp": "2025-02-12T23:58:13",
+            "highLimit": 144,
+            "lowLimit": 90,
+            "kind": "LIMITS",
+            "version": 1
+         },
+         {
+            "highLimit": 0,
+            "lowLimit": 0
+         }
+      ],
+      "belowHypoLimit": 1,
+      "aboveHyperLimit": 50,
+      "timeInRange": 0,
+      "averageSGFloat": 193.52083,
+      "averageSG": 194,
+      "markers": [
+         {
+            "type": "AUTO_MODE_STATUS",
+            "timestamp": "2025-02-12T13:48:13",
+            "displayTime": "2025-02-12T13:48:13",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-02-12T13:48:13",
+            "displayTime": "2025-02-12T13:48:13",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-02-12T19:33:05",
+            "displayTime": "2025-02-12T19:33:05",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-02-12T20:52:09",
+            "displayTime": "2025-02-12T20:52:09",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-02-13T08:43:09",
+            "displayTime": "2025-02-13T08:43:09",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-02-13T09:20:38",
+            "displayTime": "2025-02-13T09:20:38",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-02-13T09:53:09",
+            "displayTime": "2025-02-13T09:53:09",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-02-13T10:10:16",
+            "displayTime": "2025-02-13T10:10:16",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "LOW_GLUCOSE_SUSPENDED",
+            "timestamp": "2025-02-13T13:33:08",
+            "displayTime": "2025-02-13T13:33:09",
+            "data": {
+               "dataValues": {},
+               "resourceValues": {}
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "TBD"
+                           }
+                        ],
+                        "iconIdentifier": "TBD",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "CALIBRATION",
+            "timestamp": "2025-02-12T15:54:00",
+            "displayTime": "2025-02-12T15:54:00",
+            "data": {
+               "dataValues": {
+                  "unitValue": "229",
+                  "bgUnits": "MMOL_L",
+                  "calibrationSuccess": true
+               },
+               "resourceValues": {
+                  "LS_MmolL": [],
+                  "LS_CalibrationAccepted": [
+                     "229"
+                  ],
+                  "LS_SensorCalibrated": [
+                     "229"
+                  ],
+                  "LS_SensorCalibratedWith": [
+                     "229"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_bloodglucose.png",
+                        "position": 180
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_CalibrationAccepted"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_bloodglucose.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_SensorCalibrated $LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "ongraph_status_bg@3x.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_SensorCalibrated $LS_MmolL"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_SensorCalibratedWith $LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "ongraph_status_bg@3x.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "CALIBRATION",
+            "timestamp": "2025-02-13T03:55:00",
+            "displayTime": "2025-02-13T03:55:00",
+            "data": {
+               "dataValues": {
+                  "unitValue": "243",
+                  "bgUnits": "MMOL_L",
+                  "calibrationSuccess": true
+               },
+               "resourceValues": {
+                  "LS_MmolL": [],
+                  "LS_CalibrationAccepted": [
+                     "243"
+                  ],
+                  "LS_SensorCalibrated": [
+                     "243"
+                  ],
+                  "LS_SensorCalibratedWith": [
+                     "243"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_bloodglucose.png",
+                        "position": 180
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_CalibrationAccepted"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_bloodglucose.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_SensorCalibrated $LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "ongraph_status_bg@3x.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_SensorCalibrated $LS_MmolL"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_SensorCalibratedWith $LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "ongraph_status_bg@3x.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "CALIBRATION",
+            "timestamp": "2025-02-13T13:04:59",
+            "displayTime": "2025-02-13T13:05:00",
+            "data": {
+               "dataValues": {
+                  "unitValue": "162",
+                  "bgUnits": "MMOL_L",
+                  "calibrationSuccess": true
+               },
+               "resourceValues": {
+                  "LS_MmolL": [],
+                  "LS_CalibrationAccepted": [
+                     "162"
+                  ],
+                  "LS_SensorCalibrated": [
+                     "162"
+                  ],
+                  "LS_SensorCalibratedWith": [
+                     "162"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_bloodglucose.png",
+                        "position": 180
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_CalibrationAccepted"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_bloodglucose.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_SensorCalibrated $LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "ongraph_status_bg@3x.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_SensorCalibrated $LS_MmolL"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_SensorCalibratedWith $LS_MmolL"
+                           }
+                        ],
+                        "iconIdentifier": "ongraph_status_bg@3x.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "INSULIN",
+            "timestamp": "2025-02-12T15:38:27",
+            "displayTime": "2025-02-12T15:38:27",
+            "data": {
+               "dataValues": {
+                  "insulinType": "UNKNOWN",
+                  "programmedFastAmount": "1",
+                  "deliveredFastAmount": "1",
+                  "activationType": "UNDETERMINED",
+                  "completed": true,
+                  "bolusType": "FAST"
+               },
+               "resourceValues": {
+                  "LS_Bolus": [],
+                  "LS_Insulin_Units": [
+                     "1"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryTitle": [
+                     "1"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryDesc": [
+                     "1"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_medicine.png",
+                        "position": 999
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_Bolus"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_Insulin_Units"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_medicine@2x.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "INSULIN",
+            "timestamp": "2025-02-12T19:02:30",
+            "displayTime": "2025-02-12T19:02:30",
+            "data": {
+               "dataValues": {
+                  "insulinType": "UNKNOWN",
+                  "programmedFastAmount": "4.8",
+                  "deliveredFastAmount": "4.8",
+                  "activationType": "UNDETERMINED",
+                  "completed": true,
+                  "bolusType": "FAST"
+               },
+               "resourceValues": {
+                  "LS_Bolus": [],
+                  "LS_Insulin_Units": [
+                     "4.8"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryTitle": [
+                     "4.8"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryDesc": [
+                     "4.8"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_medicine.png",
+                        "position": 999
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_Bolus"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_Insulin_Units"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_medicine@2x.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "INSULIN",
+            "timestamp": "2025-02-12T21:58:34",
+            "displayTime": "2025-02-12T21:58:34",
+            "data": {
+               "dataValues": {
+                  "insulinType": "UNKNOWN",
+                  "programmedFastAmount": "1",
+                  "deliveredFastAmount": "1",
+                  "activationType": "UNDETERMINED",
+                  "completed": true,
+                  "bolusType": "FAST"
+               },
+               "resourceValues": {
+                  "LS_Bolus": [],
+                  "LS_Insulin_Units": [
+                     "1"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryTitle": [
+                     "1"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryDesc": [
+                     "1"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_medicine.png",
+                        "position": 999
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_Bolus"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_Insulin_Units"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_medicine@2x.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "INSULIN",
+            "timestamp": "2025-02-13T07:41:27",
+            "displayTime": "2025-02-13T07:41:27",
+            "data": {
+               "dataValues": {
+                  "insulinType": "UNKNOWN",
+                  "programmedFastAmount": "4.8",
+                  "deliveredFastAmount": "4.8",
+                  "activationType": "UNDETERMINED",
+                  "completed": true,
+                  "bolusType": "FAST"
+               },
+               "resourceValues": {
+                  "LS_Bolus": [],
+                  "LS_Insulin_Units": [
+                     "4.8"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryTitle": [
+                     "4.8"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryDesc": [
+                     "4.8"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_medicine.png",
+                        "position": 999
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_Bolus"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_Insulin_Units"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_medicine@2x.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "type": "INSULIN",
+            "timestamp": "2025-02-13T10:43:32",
+            "displayTime": "2025-02-13T10:43:32",
+            "data": {
+               "dataValues": {
+                  "insulinType": "UNKNOWN",
+                  "programmedFastAmount": "1",
+                  "deliveredFastAmount": "1",
+                  "activationType": "UNDETERMINED",
+                  "completed": true,
+                  "bolusType": "FAST"
+               },
+               "resourceValues": {
+                  "LS_Bolus": [],
+                  "LS_Insulin_Units": [
+                     "1"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryTitle": [
+                     "1"
+                  ],
+                  "LS_RegularBolusCompletedDeliveryDesc": [
+                     "1"
+                  ]
+               }
+            },
+            "views": [
+               {
+                  "viewType": "GRAPH",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [],
+                        "iconIdentifier": "icon_event_medicine.png",
+                        "position": 999
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_Bolus"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_Insulin_Units"
+                           }
+                        ],
+                        "iconIdentifier": "icon_event_medicine@2x.png",
+                        "position": -1
+                     }
+                  ]
+               },
+               {
+                  "viewType": "HISTORY",
+                  "items": [
+                     {
+                        "action": "DISPLAY",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     },
+                     {
+                        "action": "ONCLICK",
+                        "contents": [
+                           {
+                              "type": "TITLE",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryTitle"
+                           },
+                           {
+                              "type": "DESCRIPTION",
+                              "resourceKey": "$LS_RegularBolusCompletedDeliveryDesc"
+                           }
+                        ],
+                        "iconIdentifier": "bolus_icon.png",
+                        "position": -1
+                     }
+                  ]
+               }
+            ]
+         }
+      ],
+      "sgs": [
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         },
+         {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+         }
+      ],
+      "notificationHistory": {
+         "activeNotifications": [],
+         "clearedNotifications": []
+      },
+      "sensorLifeText": "LS_ExpiringSoonHoursGrace",
+      "sensorLifeIcon": "ic_calendar_alert@2x.png"
+   }
+}
