@@ -45,27 +45,24 @@ if client.init():
         messages.append(f"Trend {str(trend)}\n")
         messages.append(f"Serzor traje jos {str(patientData['sensorDurationMinutes']//1440)}d {str((patientData['sensorDurationMinutes']%1440)//60)}h {str((patientData['sensorDurationMinutes']%1440)%60)}m")
         messages.append(f"Sledeca kalibracija za {str(patientData['timeToNextCalibrationMinutes']//60)}h {str(patientData['timeToNextCalibrationMinutes']%60)}m")
-        
-
-    if sensorState == 'CHANGE_SENSOR':
-        messages.append(f"⚠️ Zamenite senzor\n")
-        
+        if sensorState == 'CHANGE_SENSOR':
+            messages.append(f"⚠️ Zamenite senzor\n")
+            
         if 'pumpBannerState' in patientData:
-                if len(patientData['pumpBannerState']) > 0 and patientData['pumpBannerState'][0]['type'] == 'TEMP_BASAL':
-                    temporalni=patientData['pumpBannerState'][0]['timeRemaining']
-                    messages.append(f"Temporalni tece jos {str(temporalni)} min\n")
+            if len(patientData['pumpBannerState']) > 0 and patientData['pumpBannerState'][0]['type'] == 'TEMP_BASAL':
+                temporalni=patientData['pumpBannerState'][0]['timeRemaining']
+                messages.append(f"Temporalni tece jos {str(temporalni)} min\n")
 
         if activeInsulin != -1.0:
             messages.append(f"Aktivni insulin {str(activeInsulin)}")
-
     else:
-           messages.append(f"⚠️ Senzor nije povezan\n")
-           for sg in patientData['sgs']:
-                if sg:
-                    glicemia = round(sg['sg'] / 18, 1)
-                    messages.append(f"Poslednja glikemija {str(glicemia)}\n")
-                    messages.append(f"Poslednja sinhronizacija {str(lastTime)}\n")
-                    break
+        messages.append(f"⚠️ Senzor nije povezan\n")
+        for sg in patientData['sgs']:
+            if sg:
+                glicemia = round(sg['sg'] / 18, 1)
+                messages.append(f"Poslednja glikemija {str(glicemia)}\n")
+                messages.append(f"Poslednja sinhronizacija {str(lastTime)}\n")
+                break
 
     if patientData['pumpSuspended']:
         messages.append(f"⚠️ Pumpica je suspendovana")
