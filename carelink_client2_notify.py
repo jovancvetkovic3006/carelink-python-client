@@ -5,15 +5,22 @@ import carelink_client2
 import json
 from datetime import datetime
 import os
+import subprocess
 
-# For native Android notifications inside Pydroid 3
-try:
-    from plyer import notification
-except ImportError:
-    notification = None
-    print("plyer module not found, notifications will not work.")
-
+# ========== CONFIGURATION ==========
 DATA_FILE = "carelink_latestdata.json"
+# ===================================
+
+def send_notification(title, message):
+    try:
+        subprocess.run([
+            'termux-notification',
+            '--title', title,
+            '--content', message,
+            '--priority', 'high'
+        ])
+    except Exception as e:
+        print("Notification error:", e)
 
 try:
     client = carelink_client2.CareLinkClient(tokenFile="logindata.json")
@@ -121,16 +128,8 @@ try:
         except Exception as e:
             print("Greška pri snimanju novih podataka:", e)
 
-        # Send native Android notification via plyer if available
-        if notification:
-            notification.notify(
-                title="CareLink Status",
-                message='\n'.join(messages),
-                timeout=10
-            )
-        else:
-            print("Native notification skipped (plyer not available).")
-            print('\n'.join(messages))
+        # Send local notification using Termux API
+        send_notification("CareLink Update", '\n'.join(messages))
 
     else:
         print("Neuspela autentifikacija sa CareLink.")

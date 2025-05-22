@@ -4,7 +4,7 @@
     "firstName": "Jefimija",
     "appModelType": "BLE_20_COMM",
     "appModelNumber": "NA",
-    "currentServerTime": 1747929602058,
+    "currentServerTime": 1747930202640,
     "conduitSerialNumber": "BCCAD014-CF75-40DA-B83C-EF3C3E1B0802",
     "conduitBatteryLevel": 0,
     "conduitBatteryStatus": "FULL",
@@ -20,7 +20,7 @@
         "pnpId": "01.0.0",
         "deviceSerialNumber": "NG3277085H"
     },
-    "medicalDeviceTime": 1747933179735,
+    "medicalDeviceTime": 1747933780317,
     "lastMedicalDeviceDataUpdateServerTime": 1747898303602,
     "calFreeSensor": false,
     "calibStatus": "UNKNOWN",
@@ -639,20 +639,6 @@
         }
     ],
     "sgs": [
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 0,
-            "sensorState": "NO_DATA_FROM_PUMP",
-            "timestamp": "2025-05-21T17:00:31"
-        },
-        {
-            "kind": "SG",
-            "version": 1,
-            "sg": 0,
-            "sensorState": "NO_DATA_FROM_PUMP",
-            "timestamp": "2025-05-21T17:05:31"
-        },
         {
             "kind": "SG",
             "version": 1,
@@ -1926,6 +1912,16 @@
             "sg": 0,
             "sensorState": "NO_DATA_FROM_PUMP",
             "timestamp": "2025-05-22T08:15:31"
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
+        },
+        {
+            "kind": "SG",
+            "version": 1,
+            "sg": 0
         },
         {
             "kind": "SG",
