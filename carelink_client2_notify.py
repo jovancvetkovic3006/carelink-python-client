@@ -2,18 +2,18 @@
 
 import time
 import carelink_client2
-import http.client
-import urllib
 import json
 from datetime import datetime
 import os
 
-# ========== CONFIGURATION ==========
-# 🔐 Replace with your real Pushover API details
-PUSHOVER_TOKEN = "axzpjt4zu82iqv7qqkrzk2im2325db"
-PUSHOVER_USER = "u9ca2yvoqzyks38hp6bs51fk2ka3hv"
+# For native Android notifications inside Pydroid 3
+try:
+    from plyer import notification
+except ImportError:
+    notification = None
+    print("plyer module not found, notifications will not work.")
+
 DATA_FILE = "carelink_latestdata.json"
-# ===================================
 
 try:
     client = carelink_client2.CareLinkClient(tokenFile="logindata.json")
@@ -121,22 +121,18 @@ try:
         except Exception as e:
             print("Greška pri snimanju novih podataka:", e)
 
-        # Send push notification
-        try:
-            conn = http.client.HTTPSConnection("api.pushover.net:443")
-            conn.request("POST", "/1/messages.json",
-                         urllib.parse.urlencode({
-                             "html": 1,
-                             "token": PUSHOVER_TOKEN,
-                             "user": PUSHOVER_USER,
-                             "message": '\n'.join(messages),
-                         }), {"Content-type": "application/x-www-form-urlencoded"})
-            response = conn.getresponse()
-            print("Push response:", response.status, response.reason)
-        except Exception as e:
-            print("Push greška:", e)
+        # Send native Android notification via plyer if available
+        if notification:
+            notification.notify(
+                title="CareLink Status",
+                message='\n'.join(messages),
+                timeout=10
+            )
+        else:
+            print("Native notification skipped (plyer not available).")
+            print('\n'.join(messages))
 
     else:
         print("Neuspela autentifikacija sa CareLink.")
 except Exception as ex:
-    print("Neočekovana greška:", ex)
+    print("Neočekvana greška:", ex)
