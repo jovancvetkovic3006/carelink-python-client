@@ -6,108 +6,137 @@ import http.client
 import urllib
 import json
 from datetime import datetime
+import os
 
-client = carelink_client2.CareLinkClient(tokenFile="logindata.json")
-if client.init():
-    client.printUserInfo()
-    recentData = client.getRecentData()
-    patientData = recentData['patientData']
+# ========== CONFIGURATION ==========
+# 🔐 Replace with your real Pushover API details
+PUSHOVER_TOKEN = "axzpjt4zu82iqv7qqkrzk2im2325db"
+PUSHOVER_USER = "u9ca2yvoqzyks38hp6bs51fk2ka3hv"
+DATA_FILE = "carelink_latestdata.json"
+# ===================================
 
-    unitsLeft = patientData['reservoirRemainingUnits'] if ('reservoirRemainingUnits' in patientData) else 0
-    glicemia = round(patientData['lastSG']['sg'] / 18, 1)
+try:
+    client = carelink_client2.CareLinkClient(tokenFile="logindata.json")
+    if client.init():
+        client.printUserInfo()
+        recentData = client.getRecentData()
+        patientData = recentData.get('patientData', {})
 
-    sensorState = patientData['lastSG']['sensorState']
-    timestamp = patientData['lastSG']['timestamp']
-    dt = datetime.fromisoformat(timestamp)
-    lastTime = dt.strftime("%B %d, %Y u %I:%M") 
+        unitsLeft = patientData.get('reservoirRemainingUnits', 0)
+        glicemia = round(patientData['lastSG']['sg'] / 18, 1) if 'lastSG' in patientData else 0
 
-    isSensorConected=patientData['conduitSensorInRange']
-    activeInsulin = round(patientData['activeInsulin']['amount'], 1)
+        sensorState = patientData.get('lastSG', {}).get('sensorState', 'UNKNOWN')
+        timestamp = patientData.get('lastSG', {}).get('timestamp')
+        dt = datetime.fromisoformat(timestamp) if timestamp else datetime.now()
+        lastTime = dt.strftime("%B %d, %Y u %I:%M")
 
-    sensorBattery = patientData['gstBatteryLevel']
-    pumpBattery = patientData['conduitBatteryLevel']
-    
-    deviceIsInRange = patientData['conduitSensorInRange']
-    trend = '⚠️ pada' if patientData['lastSGTrend'] == 'DOWN' else 'raste' if patientData['lastSGTrend'] == 'UP' else 'miran'
-    averageSG=round(patientData['averageSG'] / 18, 1)
-    timeInRange='-'
-    belowHypoLimit=str(patientData['belowHypoLimit'])+'%'
-    aboveHyperLimit=str(patientData['aboveHyperLimit'])+'%'
+        isSensorConnected = patientData.get('conduitSensorInRange', False)
+        activeInsulin = round(patientData.get('activeInsulin', {}).get('amount', -1.0), 1)
 
-    if patientData['timeInRange']:
-        timeInRange=str(patientData['timeInRange'])+'%'
+        sensorBattery = patientData.get('gstBatteryLevel', 0)
+        pumpBattery = patientData.get('conduitBatteryLevel', 0)
 
+        deviceIsInRange = patientData.get('conduitSensorInRange', False)
+        trend_raw = patientData.get('lastSGTrend', '')
+        trend = '⚠️ pada' if trend_raw == 'DOWN' else 'raste' if trend_raw == 'UP' else 'miran'
+        averageSG = round(patientData.get('averageSG', 0) / 18, 1)
+        timeInRange = "-"
+        belowHypoLimit = f"{patientData.get('belowHypoLimit', 0)}%"
+        aboveHyperLimit = f"{patientData.get('aboveHyperLimit', 0)}%"
 
-    messages = []
+        if 'timeInRange' in patientData:
+            timeInRange = f"{patientData['timeInRange']}%"
 
-    if deviceIsInRange & isSensorConected & bool(glicemia):
-        messages.append(f"Glikemija {str(glicemia)}\n")
-        messages.append(f"Trend {str(trend)}\n")
-        messages.append(f"Serzor traje jos {str(patientData['sensorDurationMinutes']//1440)}d {str((patientData['sensorDurationMinutes']%1440)//60)}h {str((patientData['sensorDurationMinutes']%1440)%60)}m")
-        messages.append(f"Sledeca kalibracija za {str(patientData['timeToNextCalibrationMinutes']//60)}h {str(patientData['timeToNextCalibrationMinutes']%60)}m")
-        if sensorState == 'CHANGE_SENSOR':
-            messages.append(f"⚠️ Zamenite senzor\n")
-            
-        if 'pumpBannerState' in patientData:
-            if len(patientData['pumpBannerState']) > 0 and patientData['pumpBannerState'][0]['type'] == 'TEMP_BASAL':
-                temporalni=patientData['pumpBannerState'][0]['timeRemaining']
-                messages.append(f"Temporalni tece jos {str(temporalni)} min\n")
+        messages = []
 
-        if activeInsulin != -1.0:
-            messages.append(f"Aktivni insulin {str(activeInsulin)}")
+        if deviceIsInRange and isSensorConnected and bool(glicemia):
+            messages.append(f"Glikemija {glicemia}")
+            messages.append(f"Trend {trend}")
+            messages.append(
+                f"Serzor traje jos {patientData.get('sensorDurationMinutes', 0)//1440}d "
+                f"{(patientData.get('sensorDurationMinutes', 0)%1440)//60}h "
+                f"{(patientData.get('sensorDurationMinutes', 0)%1440)%60}m"
+            )
+            messages.append(
+                f"Sledeca kalibracija za {patientData.get('timeToNextCalibrationMinutes', 0)//60}h "
+                f"{patientData.get('timeToNextCalibrationMinutes', 0)%60}m"
+            )
+
+            if sensorState == 'CHANGE_SENSOR':
+                messages.append("⚠️ Zamenite senzor")
+
+            banner = patientData.get('pumpBannerState', [])
+            if banner and banner[0].get('type') == 'TEMP_BASAL':
+                temporalni = banner[0].get('timeRemaining', 0)
+                messages.append(f"Temporalni tece jos {temporalni} min")
+
+            if activeInsulin != -1.0:
+                messages.append(f"Aktivni insulin {activeInsulin}")
+        else:
+            messages.append("⚠️ Senzor nije povezan")
+            for sg in patientData.get('sgs', []):
+                if sg:
+                    glicemia = round(sg['sg'] / 18, 1)
+                    messages.append(f"Poslednja glikemija {glicemia}")
+                    messages.append(f"Poslednja sinhronizacija {lastTime}")
+                    break
+
+        if patientData.get('pumpSuspended', False):
+            messages.append("⚠️ Pumpica je suspendovana")
+
+        messages.append(f"HbA1c {averageSG}")
+        if 'timeInRange' in patientData:
+            messages.append(f"U normali je {timeInRange}")
+            messages.append(f"Niska {belowHypoLimit}")
+            messages.append(f"Visoka {aboveHyperLimit}")
+
+        if unitsLeft < 20:
+            messages.append(f"⚠️ Preostalo jedinica {unitsLeft}")
+        else:
+            messages.append(f"Preostalo jedinica {unitsLeft}")
+
+        if sensorBattery < 10:
+            messages.append(f"⚠️ Baterija senzora {sensorBattery}%")
+        else:
+            messages.append(f"Baterija senzora {sensorBattery}%")
+
+        if pumpBattery < 10:
+            messages.append(f"⚠️ Baterija pumpice {pumpBattery}%")
+        else:
+            messages.append(f"Baterija pumpice {pumpBattery}%")
+
+        # Load previous data if available
+        previousData = {}
+        if os.path.exists(DATA_FILE):
+            try:
+                with open(DATA_FILE, 'r') as openfile:
+                    previousData = json.load(openfile)
+            except Exception as e:
+                print("Greška pri čitanju prethodnih podataka:", e)
+
+        # Save new data
+        try:
+            with open(DATA_FILE, "w") as outfile:
+                json.dump(patientData, outfile, indent=4)
+        except Exception as e:
+            print("Greška pri snimanju novih podataka:", e)
+
+        # Send push notification
+        try:
+            conn = http.client.HTTPSConnection("api.pushover.net:443")
+            conn.request("POST", "/1/messages.json",
+                         urllib.parse.urlencode({
+                             "html": 1,
+                             "token": PUSHOVER_TOKEN,
+                             "user": PUSHOVER_USER,
+                             "message": '\n'.join(messages),
+                         }), {"Content-type": "application/x-www-form-urlencoded"})
+            response = conn.getresponse()
+            print("Push response:", response.status, response.reason)
+        except Exception as e:
+            print("Push greška:", e)
+
     else:
-        messages.append(f"⚠️ Senzor nije povezan\n")
-        for sg in patientData['sgs']:
-            if sg:
-                glicemia = round(sg['sg'] / 18, 1)
-                messages.append(f"Poslednja glikemija {str(glicemia)}\n")
-                messages.append(f"Poslednja sinhronizacija {str(lastTime)}\n")
-                break
-
-    if patientData['pumpSuspended']:
-        messages.append(f"⚠️ Pumpica je suspendovana")
-
-    messages.append(f"HbA1c {str(averageSG)}")
-
-    if patientData['timeInRange']:
-        messages.append(f"U normali je {str(timeInRange)}")
-        messages.append(f"Niska {str(belowHypoLimit)}")
-        messages.append(f"Visoka {str(aboveHyperLimit)}")
-
-    
-    if unitsLeft < 20:
-        messages.append(f"⚠️ Preostalo jedinica {str(unitsLeft)}")
-    else:
-        messages.append(f"Preostalo jedinica {str(unitsLeft)}")
-
-    if sensorBattery < 10:
-        messages.append(f"⚠️ Baterija senzora {str(sensorBattery)}%")
-    else:
-        messages.append(f"Baterija senzora {str(sensorBattery)}%")
-
-    if pumpBattery < 10:
-        messages.append(f"⚠️ Baterija pumpice {str(pumpBattery)}%\n")
-    else:
-        messages.append(f"Baterija pumpice {str(pumpBattery)}%\n")
-
-
-with open('carelink_latestdata.json', 'r') as openfile:
-    previousData = json.load(openfile)
-
-json_object = json.dumps(patientData, indent=4)
-with open("carelink_latestdata.json", "w") as outfile:
-    outfile.write(json_object)
-
-conn = http.client.HTTPSConnection("api.pushover.net:443")
-conn.request("POST", "/1/messages.json",
-             urllib.parse.urlencode({
-                 "html": 1,
-                 "token": "axzpjt4zu82iqv7qqkrzk2im2325db",
-                 "user": "u9ca2yvoqzyks38hp6bs51fk2ka3hv",
-                 "message": '\n'.join(map(str, messages)),
-             }), {"Content-type": "application/x-www-form-urlencoded"})
-conn.getresponse()
-
-# crontab -e */10 * * * * sh /home/jovancvetkovic/IdeaProjects/carelink/carelink-python-client/run-push.sh
-# crontab -e */10 * * * * python3 /home/jovancvetkovic/IdeaProjects/carelink/carelink-python-client/run-push.sh
-# grep "/home/jovancvetkovic/IdeaProjects/carelink/carelink-python-client/carelink_client2_push.py" /var/log/syslog
+        print("Neuspela autentifikacija sa CareLink.")
+except Exception as ex:
+    print("Neočekovana greška:", ex)
