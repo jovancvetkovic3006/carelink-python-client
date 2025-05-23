@@ -56,62 +56,55 @@ try:
 
         messages = []
 
+        messages.append(f"📅 {lastTime}")
+        messages.append(f"🩸 Glikemija: {glicemia} mmol/L")
+        messages.append(f"📈 Trend: {trend}")
+
         if deviceIsInRange and isSensorConnected and bool(glicemia):
-            messages.append(f"Glikemija {glicemia}")
-            messages.append(f"Trend {trend}")
-            messages.append(
-                f"Serzor traje jos {patientData.get('sensorDurationMinutes', 0)//1440}d "
-                f"{(patientData.get('sensorDurationMinutes', 0)%1440)//60}h "
-                f"{(patientData.get('sensorDurationMinutes', 0)%1440)%60}m"
-            )
-            messages.append(
-                f"Sledeca kalibracija za {patientData.get('timeToNextCalibrationMinutes', 0)//60}h "
-                f"{patientData.get('timeToNextCalibrationMinutes', 0)%60}m"
-            )
+            duration = patientData.get('sensorDurationMinutes', 0)
+            messages.append(f"🕒 Senzor: {duration//1440}d {(duration%1440)//60}h {(duration%1440)%60}m")
+
+            calibration = patientData.get('timeToNextCalibrationMinutes', 0)
+            messages.append(f"🎯 Sledeća kalibracija: {calibration//60}h {calibration%60}m")
 
             if sensorState == 'CHANGE_SENSOR':
-                messages.append("⚠️ Zamenite senzor")
+                messages.append("⚠️ Potrebna zamena senzora")
 
             banner = patientData.get('pumpBannerState', [])
             if banner and banner[0].get('type') == 'TEMP_BASAL':
                 temporalni = banner[0].get('timeRemaining', 0)
-                messages.append(f"Temporalni tece jos {temporalni} min")
+                messages.append(f"💡 Temporalna bazalna: još {temporalni} min")
 
             if activeInsulin != -1.0:
-                messages.append(f"Aktivni insulin {activeInsulin}")
+                messages.append(f"💉 Aktivni insulin: {activeInsulin} U")
+
         else:
             messages.append("⚠️ Senzor nije povezan")
             for sg in patientData.get('sgs', []):
                 if sg:
                     glicemia = round(sg['sg'] / 18, 1)
-                    messages.append(f"Poslednja glikemija {glicemia}")
-                    messages.append(f"Poslednja sinhronizacija {lastTime}")
+                    messages.append(f"📊 Poslednja glikemija: {glicemia} mmol/L")
+                    messages.append(f"🕓 Poslednja sinhronizacija: {lastTime}")
                     break
 
         if patientData.get('pumpSuspended', False):
-            messages.append("⚠️ Pumpica je suspendovana")
+            messages.append("⛔ Pumpica je suspendovana")
 
-        messages.append(f"HbA1c {averageSG}")
-        if 'timeInRange' in patientData:
-            messages.append(f"U normali je {timeInRange}")
-            messages.append(f"Niska {belowHypoLimit}")
-            messages.append(f"Visoka {aboveHyperLimit}")
+        messages.append(f"🧪 HbA1c (prosečna): {averageSG}")
+        messages.append(f"✅ U normali: {timeInRange}")
+        messages.append(f"⬇️ Niska: {belowHypoLimit}")
+        messages.append(f"⬆️ Visoka: {aboveHyperLimit}")
 
-        if unitsLeft < 20:
-            messages.append(f"⚠️ Preostalo jedinica {unitsLeft}")
-        else:
-            messages.append(f"Preostalo jedinica {unitsLeft}")
+        messages.append(
+            f"{'⚠️ ' if unitsLeft < 20 else ''}Insulin u rezervoaru: {unitsLeft} U")
 
-        if sensorBattery < 10:
-            messages.append(f"⚠️ Baterija senzora {sensorBattery}%")
-        else:
-            messages.append(f"Baterija senzora {sensorBattery}%")
+        messages.append(
+            f"{'⚠️ ' if sensorBattery < 10 else ''}Baterija senzora: {sensorBattery}%")
 
-        if pumpBattery < 10:
-            messages.append(f"⚠️ Baterija pumpice {pumpBattery}%")
-        else:
-            messages.append(f"Baterija pumpice {pumpBattery}%")
+        messages.append(
+            f"{'⚠️ ' if pumpBattery < 10 else ''}Baterija pumpice: {pumpBattery}%")
 
+        
         # Load previous data if available
         previousData = {}
         if os.path.exists(DATA_FILE):
